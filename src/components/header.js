@@ -1,7 +1,15 @@
-import img from '../img/logo.jpg'
 function Header(){
     return(
-        <header><img src={img} alt="Logo Little Lemon" width="200px" height="100px"></img></header>
+        <header>
+            <div className="header">
+            <h1>Little Lemon</h1>
+            <h2>Chicago</h2>
+            <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+            </p>
+            <button>Reserve a Table</button>
+            </div>
+        </header>
     )
 }
 export default Header;

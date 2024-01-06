@@ -6,9 +6,8 @@ import Footer from './components/footer.js'
 function App() {
   return (
     <>
-    
-    <Header></Header>
     <Nav></Nav>
+    <Header></Header>
     <Main></Main>
     <Footer></Footer>
     </>

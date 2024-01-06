@@ -1,22 +1,21 @@
+import imagen from "../img/logo.jpg"
 function Nav(){
-   const links = [{
-    id:1,
-    url:"https://facebook.com",
-    nombre:"Facebook"
-   },
-    {
-        id:2,
-        url:"https://instagram.com",
-        nombre:"Instagram"
-    },
-    {
-        id:3,
-        url:"https://tiktok.com",
-        nombre:"TikTok"
-    }
+   const links = [
+    {nombre:"Home",
+    url:""},
+    {nombre:"About",
+    url:""},
+    {nombre:"Menu",
+    url:""},
+    {nombre:"Reservations",
+    url:""},
+    {nombre:"Order online",
+    url:""},
+    {nombre:"Login",
+    url:""}
 ]
    const hipervinculos = links.map(link=>{
-       return( 
+       return(
        <ul key={link.id}>
             <li>
                 <a href={link.url}>{link.nombre}</a>
@@ -26,9 +25,12 @@ function Nav(){
 
 
     return(
+        <>
         <nav>
+        <img src={imagen} alt="Logo Little Lemon" width="120px" height="50px"></img>
             {hipervinculos}
         </nav>
+        </>
     )
 }
 export default Nav;
